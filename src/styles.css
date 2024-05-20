@@ -1,0 +1,153 @@
+:root{
+  --border-color: #8b8b8b;
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --heading-color: #2c3e50;
+  --button-bg-color: #2980b9;
+  --button-text-color: #fff;
+  --input-border-color: #ccc;
+  --input-focus-border-color: #3498db;
+  --navbar-bg-color: #2980b9;
+  --navbar-text-color: #2980b9;
+  --navbar-hover-bg-color: #2980b9;
+  --navbar-link-padding: 10px 20px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+nav {
+  background-color: var(--navbar-bg-color);
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: var(--navbar-text-color);
+  text-decoration: none;
+  padding: var(--navbar-link-padding);
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--navbar-hover-bg-color);
+  color: var(--button-text-color);
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: var(--input-focus-border-color);
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+h1, h2 {
+  text-align: center;
+  color: var(--heading-color);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: var(--background-color);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+  .reservationList {
+    width: 70%;
+    margin: 20px auto; /* Centraliza a tabela e adiciona um espaçamento vertical */
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  
+.reservationList > thead > tr > th {
+  padding: 10px;
+  text-align: left;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: var(--border-color);
+  font-weight: bolder;
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+}
+
+.reservationList > thead > tr > th:first-child {
+  border-left: 1px var(--border-color) solid;
+}
+
+.reservationList > tbody > tr > td {
+  padding: 10px;
+  text-align: left;
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-color: var(--border-color);
+}
+
+.reservationList > tbody > tr > td:first-child {
+  border-left: 1px var(--border-color) solid;
+}
+
+.reservationList > tbody > tr:nth-child(odd) {
+  background-color: var(--background-color);
+}
+
+.reservationList > tbody > tr:nth-child(even) {
+  background-color: #fff;
+}
